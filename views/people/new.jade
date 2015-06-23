@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  h1 Add a New Person
+  a(href='/people') See People Index
+  
+  if(errorList)
+    ul
+      each val in errorList
+        li= val
+  
+  form(action='' method='post')
+    p Name
+      label(for='person_name')
+      br
+      input(type='text' id='person_name' name='person_name')
+    p Hobby
+      label(for='person_id')
+      br
+      input(type='text' id='person_id' name='person_id')
+    p
+      input(type='submit' value='Submit') 
+  

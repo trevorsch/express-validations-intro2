@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+  h1 Add a New Puppy
+  a(href='/puppy') See Puppy Index | 
+  //- a(href='/people') See People Index
+  
+  if(errorList)
+    ul
+      each val in errorList
+        li= val
+  
+  form(action='' method='post')
+    p Puppy Name
+      label(for='pup_name')
+      br
+      input(type='text' id='pup_name' name='pup_name')
+    p ID
+      label(for='pup_id')
+      br
+      input(type='text' id='pup_id' name='pup_id')
+    p
+      input(type='submit' value='Submit') 
+  

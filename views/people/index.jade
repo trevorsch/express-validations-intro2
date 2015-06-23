@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 Showing All People
+  a(href='/people/new') Add Another Person
+  
+  
+  table
+    thead
+      tr
+        th Name
+        th Hobby
+    tbody
+      for puppy in allPuppies
+        tr
+          td= puppy.name
+          td= puppy.id

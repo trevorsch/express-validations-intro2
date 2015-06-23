@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 Showing All Puppies
+  a(href='/puppy/new') Add Another Pup
+  
+  
+  table
+    thead
+      tr
+        th Name
+        th ID
+    tbody
+      for puppy in allPuppies
+        tr
+          td= puppy.name
+          td= puppy.id
