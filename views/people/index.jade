@@ -2,7 +2,8 @@ extends ../layout
 
 block content
   h1 Showing All People
-  a(href='/people/new') Add Another Person
+  a(href='/people/new') Add Another Person |
+  a(href='/')  Home
   
   
   table
@@ -11,7 +12,7 @@ block content
         th Name
         th Hobby
     tbody
-      for puppy in allPuppies
+      for people in allPeople
         tr
-          td= puppy.name
-          td= puppy.id
+          td= people.name
+          td= people.hobby

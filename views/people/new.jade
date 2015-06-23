@@ -2,7 +2,8 @@ extends ../layout
 
 block content
   h1 Add a New Person
-  a(href='/people') See People Index
+  a(href='/people') See People Index |
+  a(href='/')  Home
   
   if(errorList)
     ul
@@ -15,9 +16,9 @@ block content
       br
       input(type='text' id='person_name' name='person_name')
     p Hobby
-      label(for='person_id')
+      label(for='person_hobby')
       br
-      input(type='text' id='person_id' name='person_id')
+      input(type='text' id='person_hobby' name='person_hobby')
     p
       input(type='submit' value='Submit') 
   
