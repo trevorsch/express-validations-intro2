@@ -18,7 +18,7 @@ And clicks "Create Puppy"
 Then they should see the created puppy on the puppies index page
 And a success message should appear
 ```
-![](wireframes/puppy1.png)
+![](wireframes/puppy.png)
 ![](wireframes/puppies3.png)
 
 ### Users can create people
